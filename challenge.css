@@ -1,0 +1,42 @@
+body{
+    background-color:cornflowerblue;
+}
+.white{
+    color: white;
+}
+.black{
+    color: black;
+}
+header{
+    font-size: 40px;
+    color: white;
+}
+footer,header,h1{
+    text-align: center;
+}
+#list{
+    margin:auto;
+    text-align: left;
+    text-anchor: middle;
+    width:20%;
+}
+img{
+    margin: 0 auto;
+    display: block;
+    width: 10%;
+}
+#quote{
+    text-align: center;
+}
+.title{
+    font-size:30px;
+}
+#bigQuote{
+    font-size:70px;
+    width:30%;
+    text-anchor:middle;
+    margin:auto;
+}
+#a:hover{
+    color:black;
+}
