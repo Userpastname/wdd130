@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.google.com/specimen/Bebas+Neue');
+@import url('https://fonts.google.com/specimen/M+PLUS+Rounded+1c');
+
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
+}
+.home-title {
+    font-family: "Bebas Neue";
+    font-size: 2em;
+    margin-top: 10px;
+}
+.book, .join{
+    font-size: 18px;
+}
+.msg p{
+    font-size: .8em;
+}
 #content{
     max-width: 1600;
 }
@@ -24,6 +42,13 @@ main section{
 
 body{
     background-color: #FFF275;
+    font-family: Bebas Neue;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+h2{
+    margin: 0;
 }
 header{
     background-color: #FFF275;
@@ -42,13 +67,17 @@ nav a:hover{
 }
 .msg{
     background-color: #FFF275;
+    line-Height:1.5;
+    padding: 35px;
 }
 footer{
     background-color: #FFF275;
+    margin-top: 200px;
 }
 nav a{
     color: #3C0000;
     text-decoration: none;
+    padding: 35px;
 }
 nav a:hover{
     color: #B96D40;
@@ -62,6 +91,8 @@ h4{
 .book, .join{
     color: #3C0000;
     text-decoration: none;
+    padding: 15px 30px;
+    margin-top:50px;
 }
 .book:hover, .join:hover{
     color: #B96D40;
@@ -71,9 +102,11 @@ h4{
 }
 .msg p{
     color: #3C0000;
+    padding-bottom: 15px;
 }
 footer{
     color: #3C0000;
+    padding: 25px 50px;
 }
 footer a{
     color: #4C5454;
@@ -85,9 +118,18 @@ footer a:hover{
 .logo, .icon{
     width: 80px;
 }
+.icon{
+    padding-top: 10px;
+}
 #hero-img{
     width:100%;
 }
 footer p a:hover{
     text-decoration: underline;
+}
+#logo_link{
+    padding-top: 5px;
+}
+footer .social img{
+    padding: 15px;
 }

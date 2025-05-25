@@ -1,0 +1,19 @@
+main{
+    background-color: lightgrey;
+}
+img{
+    display: inline-block;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 20%;
+    border-radius: 50%;
+    border: 30px solid grey
+}
+#big_image{
+    width: 100%;
+    border-radius: 0%;
+    border: 0px;
+    margin:auto;
+}
