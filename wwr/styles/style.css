@@ -24,7 +24,7 @@ main section img{
     font-size: .8em;
 }
 #content{
-    max-width: 1600;
+    max-width: 1600px;
 }
 nav a{
     text-align: center;
