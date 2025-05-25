@@ -6,7 +6,7 @@
     margin: 200px 0;
 }
 .home-title {
-    font-family: 'Impact';
+    font-family: 'BebasNeue';
     font-size: 2em;
     margin-top: 10px;
 }
@@ -49,7 +49,7 @@ main section{
 
 body{
     background-color: #FFF275;
-    font-family: 'Bebas Neue';
+    font-family: 'BebasNeue';
     font-size: 22px;
     margin: 0;
     padding: 0;
