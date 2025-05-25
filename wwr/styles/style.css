@@ -3,7 +3,7 @@
     margin: 200px 0;
 }
 .home-title {
-    font-family: Papyrus,fantasy; 
+    font-family: Papyrus,fantasy,BebasNeue; 
     font-size: 2em;
     margin-top: 10px;
     font-weight: 100px;
@@ -48,7 +48,7 @@ main section{
 
 body{
     background-color: #FFF275;
-    font-family:  Papyrus,fantasy; 
+    font-family:  Papyrus,fantasy,BebasNeue; 
     font-size: 22px;
     margin: 0;
     padding: 0;
