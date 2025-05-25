@@ -12,6 +12,13 @@
 }
 .book, .join{
     font-size: 18px;
+    border-radius: 5px;
+}
+.card-img{
+    border:10px;
+}
+main section img{
+    box-sizing: border-box;
 }
 .msg p{
     font-size: .8em;
