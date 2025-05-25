@@ -10,6 +10,7 @@
     font-family: 'BebasNeue';
     font-size: 2em;
     margin-top: 10px;
+    font-weight: 100px;
     src: url('../fonts/BebasNeue/BebasNeue Thin.otf') format('opentype');
 }
 .book, .join{
