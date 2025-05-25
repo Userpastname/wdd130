@@ -2,6 +2,7 @@
 @import url('https://fonts.google.com/specimen/Bebas+Neue');
 @import url('https://fonts.google.com/specimen/M+PLUS+Rounded+1c');
 
+
 .rivers-card, .camping-card, .rapids-card{
     margin: 200px 0;
 }
@@ -9,6 +10,7 @@
     font-family: 'BebasNeue';
     font-size: 2em;
     margin-top: 10px;
+    src: url('../fonts/BebasNeue/BebasNeue Thin.otf') format('opentype');
 }
 .book, .join{
     font-size: 18px;
@@ -53,6 +55,7 @@ body{
     font-size: 22px;
     margin: 0;
     padding: 0;
+    src: url('../fonts/BebasNeue/BebasNeue Thin.otf') format('opentype');
 }
 h2{
     margin: 0;
