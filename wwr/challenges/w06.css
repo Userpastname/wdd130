@@ -1,0 +1,13 @@
+.what{
+    display: grid;
+    columns:2;
+    grid-template-columns: 1fr,1fr;
+}
+.grey{
+    background-color: grey;
+    color: red;
+}
+.img{
+    width:20px;
+
+}
