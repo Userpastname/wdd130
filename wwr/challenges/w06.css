@@ -1,13 +1,38 @@
 .what{
     display: grid;
-    columns:2;
-    grid-template-columns: 1fr,1fr;
+
+    grid-template-columns: 300px 300px;
 }
 .grey{
     background-color: grey;
+    width: 300px;
     color: red;
-}
-.img{
-    width:20px;
+    height: 300;
 
+    display: block;
+    text-align: center;
+}
+.white{
+    width: 300px;
+    color: red;
+    display: block;
+    background-color: white;
+}
+img{
+    width: 300px;
+    display: block;
+    background-color: white;
+}
+.tart{
+    position: absolute;
+    top: 120px;
+    left: 120px;
+    font-size: 70px;
+}
+.wcherries{
+    color: red;
+    font-size: 50px;
+    position: absolute;
+    top: 200px;
+    left:365px;
 }
