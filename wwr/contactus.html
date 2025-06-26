@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rivers</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="styles/styler.css">
 </head>
 <body>
@@ -19,37 +19,107 @@
             </nav>
 
         </header>
-        <main class="grid">
-            <h1 id="title">RIVERS</h1>
-            <div id="main-forks-imgs">
-                <img src="images\rivers\mainforkslarge.png" alt="map1large">
-                <img src="images\rivers\mainforksmedium.png" alt="map1medium">
-                <img src="images\rivers\mainforksmall.png" alt="map1small">
+        <main>
+            <div id="feedback">
+
             </div>
-            <div id="desolation-imgs">
-                <img src="images\rivers\desolationlarge.png" alt="map2large">
-                <img src="images\rivers\desolationmedium.png" alt="map2medium">
-                <img src="images\rivers\desolationsmall.png" alt="map2small">
-            </div>
-            <h1 id="river-1-name">Main Fork of the Salmon River, Idaho</h1>
-            <h1 id="river-2-name">Desolation and Gray Canyon, Utah</h1>
-            <img id="river2" src="images\rivers\desolationcollage.png" alt="riverimages2">
-            <img id="river1" src="images\rivers\mainforkscollage.png" alt="riverimages1">
-            <img id="riverclip" src="images\rivers\Untitled design-Photoroom.png" alt="riverclip">
-            <p id="river1text">
-                Nestled deep in the Frank Church Wilderness of No Return winds the Salmon river. The Salmon was given the nickname long ago as the River of No Return by the people living near it because of the number of folks that came to visit and fell so in love with the rugged beauty of the river that they never left.
 
-Herds of elk and deer graze on the hillsides around the river and bear and bighorn sheep are also commonly sighted. The river corridor is also lined with awe inspiring ponderosa pine which tower over the sandy beaches in the campsites and provide shelter from sun or rain when needed.
-
-Let's not forget the rapids! They range from class I-IV. The Salmon is one of the longest undammed rivers in the United States. As a free flowing river the water is higher, faster, and colder in the early summer and lower, slower, and warmer in the late summer. There are good rapids all summer...but families with children who like to swim tend to appreciate the late summer's slower, warmer water more.
+            <form action="/my-handling-form-page" method="post">
+            <p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" />
             </p>
-            <p id="river2text">
-                Winding through canyons in central Utah, in some of the most desolate land anywhere, the Green river flows towards the mighty Colorado river and the sea. High grey stone cliffs, beautiful desert scenery, and great rapids have made this run famous. This 84-mile trip runs from from Sand Wash to Swaseys Rapid (just outside Green River Utah) and boasts outstanding scenery, interesting geologic formations, evidence of prehistoric and historic human activity, and great whitewater opportunities.
-
-Desolation is rated a Class II/III and is usually done in 6 days
-
-Desolation Canyon has been recognized as a National Landmark.  This designation is based on the uniqueness and rich history that the canyon tells.
+            <p>
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="user_email" />
             </p>
+            <p>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message"></textarea>
+            </p>
+            <p class="button">
+            <button type="submit">Send your message</button>
+            </p>
+            </form>
+
+            <style>
+                #feedback {
+                    background-color: antiquewhite;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    padding: .5em;
+                    /* make this element invisible until we are ready for it */
+                    display: none;      
+                }
+                .moveDown {
+                    margin-top: 3em;
+                }
+                body {
+                /* Center the form on the page */
+                text-align: center;
+                }
+
+                form {
+                display: inline-block;
+                /* Form outline */
+                padding: 1em;
+                border: 1px solid #ccc;
+                border-radius: 1em;
+                }
+
+                p + p {
+                margin-top: 1em;
+                }
+
+                label {
+                /* Uniform size & alignment */
+                display: inline-block;
+                min-width: 90px;
+                text-align: center;
+                }
+
+                input,
+                textarea {
+                /* To make sure that all text fields have the same font settings
+                    By default, text areas have a monospace font */
+                font: 1em sans-serif;
+                /* Uniform text field size */
+                width: 300px;
+                box-sizing: border-box;
+                /* Match form field borders */
+                border: 1px solid #999;
+                }
+
+                input:focus,
+                textarea:focus {
+                /* Set the outline width and style */
+                outline-style: solid;
+                /* To give a little highlight on active elements */
+                outline-color: #000;
+                }
+
+                textarea {
+                /* Align multiline text fields with their labels */
+                vertical-align: top;
+                /* Provide space to type some text */
+                height: 5em;
+                }
+
+                .button {
+                /* Align buttons with the text fields */
+                padding-left: 90px; /* same size as the label elements */
+                }
+
+                button {
+                /* This extra margin represent roughly the same space as the space
+                    between the labels and their text fields */
+                margin-left: 0.5em;
+                }
+
+            </style>
+
         </main>
         <footer>
             <p>Dry Oar &copy; 2025 - Miles Wendler</p>
@@ -68,5 +138,24 @@ Desolation Canyon has been recognized as a National Landmark.  This designation 
             </div> 
         </footer>
     </div>
+        
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
+                        
 </body>
 </html>
