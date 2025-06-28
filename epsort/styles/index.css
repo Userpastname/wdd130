@@ -1,0 +1,126 @@
+#logo{
+
+    width: 10em;
+    margin: 5px;
+
+}
+
+header{
+    display:grid;
+    grid-template-columns: 10% 90% ;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #272838 ;
+}
+header nav{
+    font-size: 3em;
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+nav a{
+    color:  #F4ECD6;
+    text-decoration: none;
+}
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #FF3C38;
+    color:  #F4ECD6;
+}
+
+footer{
+    background-color:#272838 ;
+    width: 100%;
+    display: flex;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding-bottom: 2em;
+}
+footer img{
+    float: right;
+    width: 10%;
+    padding-left: 75%;
+}
+#support_blocks{
+    padding-left: 2em;
+    width: 10%;
+}
+nav a:hover{
+    color: #b3ad9f;
+}
+
+  /* --primary-color: #272838   ;
+  --secondary-color: #F4ECD6 ;
+  --accent1-color: #3C7A89;
+  --accent2-color: #FF3C38; */
+
+  /* #393a51 */
+h1{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#title{
+    background-color: #272838;
+    font-size: 3em;
+    text-align: center;
+    color:  #F4ECD6;
+
+}
+#title img{
+    width: 40%;
+}
+
+
+
+#section_one{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 90%;
+    margin:auto;
+}
+#box{
+    background-color:  #3C7A89;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+#box p{
+
+    margin: 10%;
+    padding-top:10%;
+    text-align: center;
+    font-size: 2em;
+}
+#box img{
+    width: 100%;
+}
+#boxer img{
+    width:100%;
+}
+
+#section_two{
+    background-color:  #3C7A89;
+    margin: auto;
+    margin-top: 100px;    
+}
+#banners{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 90%;
+    height: 25em;
+    padding-top: 3em;
+    margin: auto;
+}
+#title_images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 90%;
+    height: 12em;    
+    margin: auto;
+}
+#banners img{
+    width: 100%;
+}
+#title_images img{
+    width:100%;
+}
