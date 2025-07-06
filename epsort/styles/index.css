@@ -100,6 +100,8 @@ h1{
 
 #section_two{
     background-color:  #3C7A89;
+    display: grid;
+    grid-template-rows: 28fr 12fr;
     margin: auto;
     margin-top: 100px;    
 }
@@ -107,7 +109,7 @@ h1{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     width: 90%;
-    height: 25em;
+    height: 100%;
     padding-top: 3em;
     margin: auto;
 }
@@ -115,7 +117,7 @@ h1{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     width: 90%;
-    height: 12em;    
+    height: 100%;    
     margin: auto;
 }
 #banners img{
