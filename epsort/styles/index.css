@@ -49,7 +49,9 @@ footer img{
 nav a:hover{
     color: #b3ad9f;
 }
-
+#title img{
+    width: 40%;
+}
   /* --primary-color: #272838   ;
   --secondary-color: #F4ECD6 ;
   --accent1-color: #3C7A89;
@@ -66,9 +68,7 @@ h1{
     color:  #F4ECD6;
 
 }
-#title img{
-    width: 40%;
-}
+
 
 
 
