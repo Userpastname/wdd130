@@ -3,24 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/shedule.css">
     <title>Shedule</title>
 </head>
 <body>
     <header>
-        <img src="images\logo.png" alt="logo">
+        <img id="logo"  src="images\logo.png" alt="logo">
         <nav>
             <a href="index.html">Home</a>
             <a href="sponsors.html">Sponsors</a>
         </nav>
     </header>
     <main>
-        <h1>Campus schedule</h1>
-        <img src="images\Simple Sheet.png" alt="shedule sheet">
-        <h1>campus map</h1>
-        <img src="images\campus_map.png" alt="campus map">
+        <div class="tab">
+            <button class="tablinks" onclick="opener(event,'shedule')" id="defaultOpen">Campus Schedule</button>
+            <button class="tablinks" onclick="opener(event,'map')">Campus Map</button>
+        </div>
+        <div id="shedule" class="tabcontent">
+            <img src="images\Simple Sheet.png" alt="shedule sheet">
+        </div>
+        <div id="map" class="tabcontent">
+            <img src="images\campus_map.png" alt="campus map">
+        </div>
+
+
     </main>
     <footer>
-        <div>
+        <div id="support_blocks">
             <h1>
                 Support Links
             </h1>
@@ -30,7 +39,32 @@
                 <a href="">support link 1</a>
             </nav>
         </div>
-        <img src="images\logo.png" alt="logo">
+        <img id="logo" src="images\logo.png" alt="logo">
     </footer>
 </body>
+<script>
+    function opener(evt, name) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(name).style.display = "block";
+    evt.currentTarget.className += " active";
+    }
+
+    document.getElementById("defaultOpen").click();
+</script>
+
 </html>
