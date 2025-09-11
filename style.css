@@ -1,0 +1,38 @@
+a{
+
+    color:black;
+}
+a:hover{
+    color: brown;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color:ghostwhite;
+    padding: 10px;
+    font-size: 1.5em;
+    margin-left: 10%;
+    width: 80%;
+    align-content: center;
+}
+h1{
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    color:darkred;
+    background-color: floralwhite;
+    padding: 1em;
+    margin-left: 9em;
+    margin-right: 9em;
+}
+p{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+img{
+    width: 50%;
+    margin-left: 25%;
+}

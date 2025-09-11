@@ -1,0 +1,55 @@
+p{
+    text-align:center;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1{
+    font-size: 65px;
+    text-align: center;
+    color:#333232 ;
+}
+
+.blonde{
+    background-color:#333232;
+    color: #dcdcdd;
+    padding: 10px;
+}
+
+img{
+    width: 100%;
+    height:auto;
+    box-shadow: 0 0 30px #333;
+}
+
+section{
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #dcdcdd;
+    font-size: .9em;
+    border: 1px #333(0 0 0 /10%);
+}
+
+h2{
+    border-bottom: 1px solid #333;
+}
+
+header{
+    font-size: 1.5rem;
+}
+
+footer{
+    font-size: 1em;
+}
+
+main{
+    width: 400px;
+    margin:0 auto;
+}
+
+ul{
+    margin-left: 10px;
+}
