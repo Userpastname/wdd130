@@ -36,3 +36,20 @@ img{
     width: 50%;
     margin-left: 25%;
 }
+aside{
+    width: 50%;
+    margin: auto;
+    border: 1em;
+    padding: 1em;
+    background-color: aliceblue;
+    color: black;
+}
+aside img{
+    width: 200px;
+    height: auto;
+}
+footer{
+    margin: 15px;
+    text-align: center;
+    border-top: 15px;
+}
