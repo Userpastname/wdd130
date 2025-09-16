@@ -42,7 +42,7 @@ img{
     width: 50%;
     border: 1px;
     padding: 1px;
-    box-shadow: 10px;
+    box-shadow: 5px 10px black;
     height: auto;
     margin-left: 25%;
 }
