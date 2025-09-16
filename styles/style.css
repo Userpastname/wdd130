@@ -5,6 +5,9 @@ a{
 a:hover{
     color: brown;
 }
+nav a{
+    color: green;
+}
 nav{
     display: flex;
     justify-content: space-around;
@@ -31,9 +34,14 @@ p{
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 1.3em;
+    padding: 0;
 }
 img{
     width: 50%;
+    border: 1px;
+    padding: 1px;
+    box-shadow: 10px;
+    height: auto;
     margin-left: 25%;
 }
 aside{
@@ -49,7 +57,10 @@ aside img{
     height: auto;
 }
 footer{
-    margin: 15px;
+    margin-top: 15px;
     text-align: center;
     border-top: 15px;
+}
+main{
+    max-width: 4000px;
 }
