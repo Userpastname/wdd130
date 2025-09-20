@@ -1,3 +1,15 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --padding: 1rem;
+}
+
+
 a{
 
     color:black;
@@ -14,55 +26,76 @@ nav{
     display: flex;
     justify-content: space-around;
     background-color:ghostwhite;
-    padding: 10px;
     font-size: 1.5em;
-    margin-left: 10%;
-    width: 80%;
-    align-content: center;
 }
 h1{
     font-size: 3em;
-    display: flex;
     justify-content: center;
+    display: flex;
     color:darkred;
     background-color: floralwhite;
-    padding: 1em;
-    margin-left: 9em;
-    margin-right: 9em;
+    width: 100%;
+}
+h2{
+    font-size: 1.5em;
+    left: 25px;
+    top: 205px;
+    color: black;
 }
 p{
-    width: 70%;
-    margin-left: 15%;
+    text-align: justify;
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 1.3em;
     padding: 0;
 }
+
+li{
+    margin-left: 1em;
+}
+
 img{
-    width: 50%;
+    width: 300px;
     border: 1px;
-    padding: 1px;
     box-shadow: 5px 10px black;
     height: auto;
-    margin-left: 25%;
 }
 aside{
-    width: 50%;
-    margin: auto;
-    border: 1em;
-    padding: 1em;
-    background-color: aliceblue;
-    color: black;
+    position: relative;
+    width:100%;
 }
 aside img{
     width: 200px;
     height: auto;
 }
+aside h2{
+    position: absolute;
+}
 footer{
     margin-top: 15px;
-    text-align: center;
     border-top: 15px;
+    display: flex;
+    justify-content: center;
 }
-main{
-    max-width: 4000px;
+
+
+/* class selectors */
+
+.box{
+    margin: 1rem;
+    margin-left: 25%;
+    border: 1em;
+    padding: 1rem;
+    background-color: aliceblue;
+    color: black;
+    width: 50%;
+}
+.profile{
+    width: 50%;
+    margin-left: 25%;
+    justify-content: center;
+}
+.profile img{
+    float: right;
+    margin-left: 1em;
 }
