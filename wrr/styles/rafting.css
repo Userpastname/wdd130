@@ -15,17 +15,16 @@ header{
 
 }
 ul{
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-
+    list-style: none;
+    align-items: center;
     place-content: center;
     font-size: 1.1em;
     margin-right: 15px;
 }
-ul a{
-    border: 3px solid;
-    border-color: rgba(78, 27, 27, 0.1);
-    padding: 0.8em 0 0.8em 0;
+li{
+    flex: 1 1 auto;
     text-align: center;
 }
 :root{
