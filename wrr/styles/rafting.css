@@ -3,10 +3,35 @@
     padding: 0;
     box-sizing: border-box;
 }
+header{
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    background-color: var(--primary-color);
+}
+.logo{
+    width: 150px;
+    margin: 0 auto;
+    padding: 15px;
+
+}
+ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    place-content: center;
+    font-size: 1.1em;
+    margin-right: 15px;
+}
+ul a{
+    border: 3px solid;
+    border-color: rgba(78, 27, 27, 0.1);
+    padding: 0.8em 0 0.8em 0;
+    text-align: center;
+}
 :root{
     --body-font: Courier, monospace;
     --accent1-color: blue;
-    --primary-color: green;
+    --primary-color: lightblue;
     --heading-font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 body{
@@ -25,11 +50,11 @@ nav, p, section, article{
     margin: 16px;
     padding: 8px;
 }
-.socialmedia a{
+a{
     text-decoration: none;
 }
 .socialmedia img{
-    width: 100px;
+    width: 40px;
     height: auto;
 }
 .hero{
@@ -39,6 +64,7 @@ nav, p, section, article{
     display: block;
     width: 100%;
     height: auto;
+    float: right;
 }
 .hero h1{
     position: absolute;
@@ -61,4 +87,51 @@ nav, p, section, article{
     float:right;
     width: 200px;
     opacity: 1;
+}
+.history{
+    display: grid;
+    grid-template-columns: 3fr 1.5fr 3fr;
+    grid-template-rows: 1fr 3fr;
+    background-color: whitesmoke;
+}
+.history h1{
+    grid-column: 1/span 3;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.history img{
+    width: 200px;
+}
+
+.adventure{
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 3fr;
+}
+.adventure h1{
+    grid-column: 1/span 6;
+    text-align: center;
+    margin-bottom:15px;
+}
+.adventure img{
+    width: 125px;
+}
+
+
+
+footer{
+    background: whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+footer nav{
+    grid-column: 3/4;
+}
+footer p{
+    display: flex;
+    grid-column: 2/3;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
