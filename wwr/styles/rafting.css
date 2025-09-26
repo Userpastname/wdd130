@@ -45,6 +45,10 @@ h1{
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
+h2{
+    font-family: var(--heading-font);
+    color: black;
+}
 nav, p, section, article{
     margin: 16px;
     padding: 8px;
@@ -117,7 +121,9 @@ a{
     width: 125px;
 }
 
-
+.socialmedia{
+    text-decoration: none;
+}
 
 footer{
     background: whitesmoke;
