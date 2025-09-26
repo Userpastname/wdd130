@@ -20,8 +20,14 @@ ul{
     list-style: none;
     align-items: center;
     place-content: center;
+    width: 100%;
     font-size: 1.1em;
     margin-right: 15px;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 li{
     flex: 1 1 auto;
@@ -97,7 +103,7 @@ a{
     grid-template-rows: 1fr 3fr;
     background-color: whitesmoke;
 }
-.history h1{
+.history h2{
     grid-column: 1/span 3;
     text-align: center;
     margin-bottom: 15px;
@@ -112,7 +118,7 @@ a{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 0.5fr 3fr;
 }
-.adventure h1{
+.adventure h2{
     grid-column: 1/span 6;
     text-align: center;
     margin-bottom:15px;
@@ -121,7 +127,7 @@ a{
     width: 125px;
 }
 
-.socialmedia{
+.socialmedia a{
     text-decoration: none;
 }
 
