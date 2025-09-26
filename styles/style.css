@@ -57,7 +57,16 @@ p{
 li{
     margin-left: 1em;
 }
-
+main{
+    max-width: 8000px;
+}
+main img{
+    width: 200px;
+    border: 1px;
+    padding: 15px;
+    box-shadow: 5px 10px black;
+    height: auto;
+}
 img{
     width: 200px;
     border: 1px;
@@ -68,12 +77,12 @@ img{
 aside{
     position: relative;
     width:100%;
-    height: auto;
+    margin: 15px;
     border: 1px;
     padding: 25px;
     background-color: floralwhite;
     color: black;
-    grid-column: 2/span 1;
+    /* grid-column: 2/span 1; */
 }
 aside img{
     width: 200px;
