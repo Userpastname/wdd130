@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/poll-form.css">
+</head>
+
+<body>
+    <header>
+        <h1>User Poll</h1>
+    </header>
+    <form>
+        <fieldset>
+            <legend>Contact Information</legend>
+            <div class="form-item column2">
+                <label for="fullname">Full Name: <input type="text" id="fullname" name="fullname"></label>
+            </div>
+            <div class="form-item column2">
+                <label for="useremail">Email: <input type="email" id="useremail" name="useremail"></label>
+            </div>
+
+        </fieldset>
+        <fieldset>
+            <legend>Questions</legend>
+
+            <div class="form-item column1">
+                <label for="browser">What is your favorite browser?
+
+                    <select name="browser" id="browser">
+                        <option value="opgx">Opera GX</option>
+                        <option value="chrome">Chrome</option>
+                        <option value="brave">Brave</option>
+                    </select><br>
+                </label>
+            </div>
+
+
+
+            <div class="form-item column1">
+                <label for="pet">Do you have a household pet?
+                    <input type="checkbox" id="pet" name="pet">
+                </label>
+
+
+            </div>
+
+
+
+            <label for="feedback">List the places you have lived.</label>
+            <textarea name="feedback" id="feedback" rows="4"
+                placeholder="Richland Washington, Orem Utah, Wetaskiwin Alberta, Steinbach Manitoba"></textarea>
+
+        </fieldset>
+        <br><input type="submit" value="submit poll">
+    </form>
+</body>
+
+</html>
